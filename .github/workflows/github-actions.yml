@@ -7,8 +7,9 @@ on:
             - '*'
 jobs:
     full-test:
+
         container: cuaesd/aesd-autotest:24-assignment5-buildroot
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
         timeout-minutes: 120
         steps:
           - uses: actions/checkout@v2
